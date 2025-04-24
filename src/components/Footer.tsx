@@ -11,7 +11,7 @@ const Footer = () => {
 
           <Link to="/" className="flex items-center space-x-2">
             <img
-              src="/public/Inflame logo.png"
+              src="https://github.com/shayed21/inflame2025/blob/main/public/Inflame%20logo.png?raw=tru"
               alt="Inflame Tech Logo"
               className="h-10 w-auto"
               style={{ maxWidth: 160 }}
