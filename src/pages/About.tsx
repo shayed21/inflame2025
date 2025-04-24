@@ -102,7 +102,7 @@ const About = () => {
               { name: "Juaber Ahmed", role: "Founder & CEO", img: "https://github.com/shayed21/inflame2025/blob/main/public/Jubayer.jpg?raw=true" },
               { name: "Sarah Khan", role: "Lead Developer", img: "/placeholder.svg" },
               { name: "David Chen", role: "UI/UX Designer", img: "/placeholder.svg" },
-              { name: "Shayed Asharf", role: "Project Manager", img: "/public/" },
+              { name: "Shayed Asharf", role: "Project Manager", img: "https://github.com/shayed21/inflame2025/blob/main/public/shayed.jpg?raw=true" },
             ].map((member, idx) => (
               <div key={idx} className="bg-background p-6 rounded-lg text-center card-hover">
                 <img 
