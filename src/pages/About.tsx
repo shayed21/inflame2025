@@ -99,7 +99,7 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {[
-              { name: "Juaber Ahmed", role: "Founder & CEO", img: "/public/Jubayer.jpg" },
+              { name: "Juaber Ahmed", role: "Founder & CEO", img: "https://github.com/shayed21/inflame2025/blob/main/public/Jubayer.jpg?raw=true" },
               { name: "Sarah Khan", role: "Lead Developer", img: "/placeholder.svg" },
               { name: "David Chen", role: "UI/UX Designer", img: "/placeholder.svg" },
               { name: "Shayed Asharf", role: "Project Manager", img: "/public/" },
