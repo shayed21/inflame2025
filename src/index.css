@@ -1,0 +1,77 @@
+@keyframes moveBall
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 32 94% 49%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 32 94% 49%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 32 94% 49%;
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins antialiased;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative text-gray-300 hover:text-white transition-colors duration-200;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-[-4px] w-0 h-[2px] bg-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #13161f 0%, #1f1f20 100%);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-300;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(243,134,9,0.2)];
+  }
+}
+/* Add to your global CSS */
+@keyframes moveBall {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    filter: blur(40px) brightness(1.5);
+  }
+  50% {
+    transform: translate(-30%, -60%) scale(1.2);
+    filter: blur(60px) brightness(2.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    filter: blur(40px) brightness(1.5);
+  }
+}
