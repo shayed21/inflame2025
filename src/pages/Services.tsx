@@ -50,14 +50,14 @@ const Services = () => {
       ]
     },
     {
-      title: "IT Consultancy",
-      description: "Strategic guidance to help you navigate your digital transformation journey.",
+      title: "SEO Service",
+      description: "Boost your online visibility and drive more organic traffic with our expert SEO services.",
       features: [
-        "Technology stack assessment",
-        "Digital transformation strategy",
-        "Process optimization",
-        "Technology implementation roadmap",
-        "IT infrastructure planning"
+        "Comprehensive site audit",
+        "On-page & off-page optimization",
+        "Keyword research & strategy",
+        "Technical SEO improvements",
+        "Monthly performance reporting"
       ]
     },
     {

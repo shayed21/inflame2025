@@ -47,8 +47,9 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact Us</h4>
             <address className="not-italic text-muted-foreground">
               <p>Dhaka, Bangladesh</p>
-              <p>Email: contact@inflame-tech.com </p>
+              <p>Email: contact@inflametech.com.aus </p>
               <p>Phone: +880-1755883771 </p>
+              <p>Phone: 0402515285</p>
             </address>
             <div className="flex space-x-4 mt-4">
               <a href="https://www.facebook.com/inflametechltd"

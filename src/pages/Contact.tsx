@@ -78,7 +78,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Email Us</h3>
-                    <p className="text-muted-foreground">contact@inflame-tech.com</p>
+                    <p className="text-muted-foreground">contact@inflametech.com.aus</p>
                     <p className="text-muted-foreground">inflametechbd@gmail.com</p>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-lg">Call Us</h3>
                     <p className="text-muted-foreground">+8801755883771</p>
-                    <p className="text-muted-foreground">+8801894740814</p>
+                    <p className="text-muted-foreground">0402515285</p>
                   </div>
                 </div>
                 
@@ -99,9 +99,10 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg">Visit Us</h3>
-                    <p className="text-muted-foreground"> House No-5A, 2nd Floor Road No-2/D, Baridhara J Block, Dhaka 1212</p>
-                    <p className="text-muted-foreground">Bangladesh</p>
+                    <h3 className="font-semibold text-lg">Visit Us Bangladesh &</h3>
+                    <p className="text-muted-foreground"> House No-5A, 2nd Floor Road No-2/D, Baridhara J Block, Dhaka 1212, Bangladesh</p>
+                    <p className="text-muted-foreground"> 189 Cairnlea Drive , Cairnlea, Victoria 3023</p>
+              
                   </div>
                 </div>
               </div>
@@ -224,6 +225,61 @@ const Contact = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-10">
+        <div className="w-full max-w-6xl mx-auto px-2 sm:px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Our Global Offices</h2>
+          <div className="relative w-full">
+            {/* Simple SVG World Map */}
+            <svg viewBox="0 0 800 400" className="w-full h-72 md:h-[32rem]" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* World map path (simplified for demo) */}
+              <rect width="800" height="400" rx="24" fill="#0a174e" />
+              <image href="https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg" x="0" y="0" width="800" height="400" opacity="0.25" />
+              {/* Bangladesh Marker with Flag */}
+              <g>
+                <foreignObject x="610" y="155" width="24" height="18">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg"
+                    alt="Bangladesh Flag"
+                    width="24"
+                    height="18"
+                    style={{ borderRadius: '3px', border: '1.5px solid #fff', boxShadow: '0 0 4px #222' }}
+                  />
+                </foreignObject>
+                <text x="640" y="175" fill="#fff" fontSize="10" fontWeight="bold">Bangladesh</text>
+              </g>
+              {/* Australia Marker with Flag */}
+              <g>
+                <foreignObject x="720" y="305" width="24" height="18">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"
+                    alt="Australia Flag"
+                    width="24"
+                    height="18"
+                    style={{ borderRadius: '3px', border: '1.5px solid #fff', boxShadow: '0 0 4px #222' }}
+                  />
+                </foreignObject>
+                <text x="750" y="325" fill="#fff" fontSize="10" fontWeight="bold">Australia</text>
+              </g>
+            </svg>
+            {/* Optional: Tooltip or info below */}
+            <div className="flex flex-col md:flex-row justify-center gap-8 mt-6 text-center">
+              <div>
+                <h3 className="font-semibold text-lg">Bangladesh Office</h3>
+                <p className="text-muted-foreground text-sm">
+                  House No-5A, 2nd Floor Road No-2/D, Baridhara J Block, Dhaka 1212, Bangladesh
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lg">Australia Office</h3>
+                <p className="text-muted-foreground text-sm">
+                  189 Cairnlea Drive, Cairnlea, Victoria 3023
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
