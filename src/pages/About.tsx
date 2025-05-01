@@ -101,9 +101,9 @@ const About = () => {
             {[
               { name: "Juaber Ahmed", role: "Founder & CEO", img: "https://github.com/shayed21/inflame2025/blob/main/public/Jubayer.jpg?raw=true" },
               { name: "Sarah Khan", role: "Lead Developer", img: "../../public/Saren Tan.jpg" },
-              { name: "Firoz Ahmed", role: "SEO Manager", img: "../../public/team/Firoz.jpg" },
+              { name: "Firoz Ahmed", role: "SEO Manager", img: "https://i.imgur.com/eYRGHmw.jpeg" },
               { name: "Shayed Asharf", role: "Project Manager", img: "https://github.com/shayed21/inflame2025/blob/main/public/shayed.jpg?raw=true" },
-              { name: "Shupto", role: "UI/UX Designer", img: "/placeholder.svg" },
+              { name: "Shupto", role: "UI/UX Designer", img: "https://i.imgur.com/urmhZ8I.jpeg" },
               { name: "Nishat Rima", role: "HR & Admin", img: "/placeholder.svg" },
               { name: "Mehedi Hasan", role: "Full Stack Developer", img: "/placeholder.svg" },
               { name: "Shawon", role: "AI Engineer", img: "/placeholder.svg" },
