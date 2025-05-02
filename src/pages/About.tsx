@@ -99,10 +99,10 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {[
-              { name: "Juaber Ahmed", role: "Founder & CEO", img: "https://github.com/shayed21/inflame2025/blob/main/public/Jubayer.jpg?raw=true" },
+              { name: "Juaber Ahmed", role: "Founder & CEO", img: "https://i.imgur.com/JrPht5S.jpeg" },
               { name: "Sarah Khan", role: "Lead Developer", img: "../../public/Saren Tan.jpg" },
               { name: "Firoz Ahmed", role: "SEO Manager", img: "https://i.imgur.com/eYRGHmw.jpeg" },
-              { name: "Shayed Asharf", role: "Project Manager", img: "https://github.com/shayed21/inflame2025/blob/main/public/shayed.jpg?raw=true" },
+              { name: "Shayed Asharf", role: "Project Manager", img: "https://i.imgur.com/dJV1ymi.jpeg" },
               { name: "Shupto", role: "UI/UX Designer", img: "https://i.imgur.com/urmhZ8I.jpeg" },
               { name: "Nishat Rima", role: "HR & Admin", img: "/placeholder.svg" },
               { name: "Mehedi Hasan", role: "Full Stack Developer", img: "/placeholder.svg" },
@@ -110,7 +110,7 @@ const About = () => {
             ].map((member, idx) => (
               <div key={idx} className="bg-background p-6 rounded-lg text-center card-hover">
                 <img 
-                  src={member.img}
+                  src={member.img} 
                   alt={member.name} 
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />

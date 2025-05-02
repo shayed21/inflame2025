@@ -23,13 +23,7 @@ const testimonials = [
     category: "Beauty & Skincare",
     content: "The website optimization has given us a major boost in traffic and conversions. People actually stick around now instead of leaving!"
   },
-  {
-    name: "Ahsanul Karim",
-    role: "Chairman, Law Valley",
-    image: "https://lawvalley.com.bd/wp-content/uploads/2025/02/1d79dac6-b69d-4303-85cc-531ce6b477c0-941x1024.jpeg",
-    category: "Law Firm",
-    content: "After optimization, our SEO rankings shot up, and so did our sales. We're getting more traffic, better engagement, and higher conversions."
-  },
+
 ];
 
 const VISIBLE_COUNT = 3;
@@ -60,7 +54,7 @@ const TestimonialsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
             Real Ones Speak:
-            <span className="block text-[#DA7807] mt-2">What the Hype's All About!</span>
+            <span className="block text-[#DA7807] mt-2">Straight from the Squad</span>
           </h2>
         </div>
         <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch transition-all duration-500">

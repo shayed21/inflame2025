@@ -9,7 +9,7 @@ const PricingSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold">
-            Built <span className="text-[#DA7807]">Diff.</span> Pick Your <span className="text-[rgb(218,120,7)]">Power Move.</span>
+           Level <span className="text-[#DA7807]">Up</span> Select Your <span className="text-[rgb(218,120,7)]">Play</span>
           </h2>
         </div>
 
@@ -17,16 +17,16 @@ const PricingSection = () => {
           {/* Premium Plan */}
           <Card className="bg-black/40 border border-gray-800 p-6 rounded-lg relative overflow-hidden">
             <CardContent className="p-0 space-y-6">
-              <h3 className="text-2xl font-semibold">Inflame Premium</h3>
-              <div className="text-4xl font-bold">$4,999</div>
-              <p className="text-gray-400">For premium brands demanding prestige, speed, and engagement.</p>
+              <h3 className="text-2xl font-semibold">ELITE TIER</h3>
+              <div className="text-4xl font-bold">$4,499 (Flagship Experience)</div>
+              <p className="text-gray-400">For elite brands who demand dominance</p>
               <ul className="space-y-3">
                 {[
                   "Everything in Bespoke Web Presence, plus:",
-                  "Custom UI/UX animations",
+                  "Signature Motion UI/UX Design System",
                   "Optimized lead capture & CRM integration",
-                  "Luxury-grade copywriting",
-                  "VIP 30-day concierge support"
+                  "Persuasion Architecture® Copywriting ",
+                  "Dedicated Launch Concierge"
                 ].map((feature, index) => (
                   <li key={index} className="flex items-center gap-2">
                     <CheckCircle className="h-5 w-5 text-primary" />
@@ -44,16 +44,16 @@ const PricingSection = () => {
               Most Popular
             </div>
             <CardContent className="p-0 space-y-6">
-              <h3 className="text-2xl font-semibold">Inflame Standard</h3>
-              <div className="text-4xl font-bold">$2,499</div>
-              <p className="text-gray-400">For startups & personal brands seeking a high-performance, luxury website.</p>
+              <h3 className="text-2xl font-semibold">HE WARRIOR PLAN</h3>
+              <div className="text-4xl font-bold">$2,000  (Ongoing Domination)</div>
+              <p className="text-gray-400">Never worry about your digital presence again</p>
               <ul className="space-y-3">
                 {[
                   "Ultra-fast (0.3ms load time)",
-                  "Custom design tailored to your brand",
-                  "Optimized SEO for higher rankings",
-                  "AI-powered caching & global CDN",
-                  "Personalized onboarding & training"
+                  "Custom design & Development tailored to your brand",
+                  "SEO Optimized higher rankings",
+                  "Weekly Performance Boosts",
+                  "Dedicated Growth Team",
                 ].map((feature, index) => (
                   <li key={index} className="flex items-center gap-2">
                     <CheckCircle className="h-5 w-5 text-primary" />
@@ -73,9 +73,9 @@ const PricingSection = () => {
               <p className="text-gray-400">Ongoing support for performance, security, and enhancements.</p>
               <ul className="space-y-3">
                 {[
-                  "Priority speed tuning (0.3ms load time)",
+                  "Fast Load Time (0.3ms load time)",
                   "24/7 dedicated support",
-                  "High-speed enterprise hosting",
+                  "Custom design & Development tailored to your brand",
                   "Monthly audits & security monitoring",
                   "Everything managed by us"
                 ].map((feature, index) => (

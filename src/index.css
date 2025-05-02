@@ -1,4 +1,3 @@
-@keyframes moveBall
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -59,8 +58,28 @@
   .card-hover {
     @apply transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(243,134,9,0.2)];
   }
+
+  .spin-btn {
+    @apply rounded-full relative overflow-hidden;
+    box-shadow: 0 0 0 4px rgba(0,212,255,0.08), 0 4px 24px 0 rgba(0,212,255,0.12);
+  }
+  .spin-light {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    pointer-events: none;
+    background: conic-gradient(from 0deg, #a7f3d0 0%, #38bdf8 30%, #f0abfc 60%, #a7f3d0 100%);
+    opacity: 0.18;
+    animation: spin 2s linear infinite;
+    z-index: 1;
+  }
+  .spin-btn > span,
+  .spin-btn > svg {
+    position: relative;
+    z-index: 2;
+  }
 }
-/* Add to your global CSS */
+
 @keyframes moveBall {
   0% {
     transform: translate(-50%, -50%) scale(1);
@@ -74,4 +93,8 @@
     transform: translate(-50%, -50%) scale(1);
     filter: blur(40px) brightness(1.5);
   }
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg);}
 }

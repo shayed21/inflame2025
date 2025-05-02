@@ -11,7 +11,7 @@ const Footer = () => {
 
           <Link to="/" className="flex items-center space-x-2">
             <img
-              src="https://github.com/shayed21/inflame2025/blob/main/public/Inflame%20logo.png?raw=tru"
+              src="https://i.imgur.com/FyVcmYJ.png"
               alt="Inflame Tech Logo"
               className="h-10 w-auto"
               style={{ maxWidth: 160 }}
@@ -46,8 +46,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact Us</h4>
             <address className="not-italic text-muted-foreground">
-              <p>Dhaka, Bangladesh</p>
-              <p>Email: contact@inflametech.com.aus </p>
+              <p>House No-5A, 2nd Floor Road No-2/D, Baridhara J Block, Dhaka 1212, Bangladesh</p>
+              <p>189 Cairnlea Drive , Cairnlea, Victoria 3023, Australia</p>
+              <p>Email: contact@inflametech.com.au </p>
               <p>Phone: +880-1755883771 </p>
               <p>Phone: 0402515285</p>
             </address>

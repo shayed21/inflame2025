@@ -78,7 +78,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Email Us</h3>
-                    <p className="text-muted-foreground">contact@inflametech.com.aus</p>
+                    <p className="text-muted-foreground">contact@inflametech.com.au</p>
                     <p className="text-muted-foreground">inflametechbd@gmail.com</p>
                   </div>
                 </div>
@@ -99,9 +99,9 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg">Visit Us Bangladesh &</h3>
+                    <h3 className="font-semibold text-lg">Visit Us Bangladesh & Australia Office</h3>
                     <p className="text-muted-foreground"> House No-5A, 2nd Floor Road No-2/D, Baridhara J Block, Dhaka 1212, Bangladesh</p>
-                    <p className="text-muted-foreground"> 189 Cairnlea Drive , Cairnlea, Victoria 3023</p>
+                    <p className="text-muted-foreground"> 189 Cairnlea Drive , Cairnlea, Victoria 3023, Australia</p>
               
                   </div>
                 </div>
@@ -276,7 +276,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-lg">Australia Office</h3>
                 <p className="text-muted-foreground text-sm">
-                  189 Cairnlea Drive, Cairnlea, Victoria 3023
+                  189 Cairnlea Drive, Cairnlea, Victoria 3023, Australia
                 </p>
               </div>
             </div>

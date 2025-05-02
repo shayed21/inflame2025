@@ -1,36 +1,36 @@
-
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { useState } from 'react';
 
 const FAQSection = () => {
   const faqs = [
     {
-      question: "What technologies do you use?",
-      answer: "We use cutting-edge technologies including React, Next.js, Node.js, and various other modern frameworks to ensure optimal performance and maintainability."
+      question: "What services do you offer?",
+      answer: "We specialize in web design, web development, mobile app development, UI/UX design, and digital marketing."
     },
     {
-      question: "Do you provide hosting and domain registration?",
-      answer: "Yes, we offer comprehensive hosting solutions and can assist with domain registration and management."
+      question: "Can you redesign my existing website or app?",
+      answer: "Yes, we can revamp your existing platform to improve performance, user experience, and visual appeal."
     },
     {
-      question: "How long does it take to build a website or web application?",
-      answer: "Project timelines vary based on complexity, but typically range from 4-12 weeks for a complete custom solution."
+      question: "Do you offer support after project completion?",
+      answer: "Absolutely! We offer maintenance and support packages tailored to your needs."
     },
     {
       question: "Do you offer SEO optimization?",
       answer: "Yes, all our websites are built with SEO best practices and we offer additional optimization services."
     },
     {
-      question: "Can I request custom features for my web application?",
-      answer: "Absolutely! We specialize in custom development and can implement any features you need."
+      question: "What platforms do you develop on?",
+      answer: "We work with platforms like React, Next.js, Laravel, Node.js, Flutter, and WordPress, among others.",
     },
     {
-      question: "Do you provide eCommerce solutions?",
-      answer: "Yes, we build custom eCommerce solutions using platforms like Shopify, WooCommerce, or custom solutions."
+      question: "Can you integrate third-party APIs or tools?",
+      answer: "Yes, we can integrate various APIs including payment gateways, analytics, CRMs, and more."
     },
     {
       question: "How do I get started?",
@@ -38,31 +38,49 @@ const FAQSection = () => {
     }
   ];
 
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
     <section className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Frequently Asked Questions</h2>
           <p className="text-gray-400">Everything you need to know about our services</p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
-                value={`item-${index}`}
-                className="bg-black/40 border border-gray-800 rounded-lg overflow-hidden"
+        <div className="max-w-3xl mx-auto space-y-6">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className={`transition-all duration-300 bg-gradient-to-br from-[#10192a] to-[#1a233a] border border-gray-800 rounded-2xl shadow-2xl overflow-hidden`}
+            >
+              <button
+                className="w-full flex justify-between items-center px-8 py-6 focus:outline-none group"
+                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                aria-expanded={openIndex === index}
               >
-                <AccordionTrigger className="px-6 hover:no-underline">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 text-gray-400">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+                <span className="text-lg font-semibold text-white text-left">{faq.question}</span>
+                <span
+                  className={`ml-4 flex items-center justify-center w-8 h-8 rounded-full border-2 border-primary transition-all duration-200
+                    ${openIndex === index ? 'bg-primary text-black rotate-180' : 'bg-black text-primary'}
+                  `}
+                >
+                  {openIndex === index ? (
+                    <span className="text-2xl font-bold">−</span>
+                  ) : (
+                    <span className="text-2xl font-bold">+</span>
+                  )}
+                </span>
+              </button>
+              <div
+                className={`px-8 pb-6 text-gray-300 text-base transition-all duration-300 ${
+                  openIndex === index ? 'block' : 'hidden'
+                }`}
+              >
+                {faq.answer}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import { Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import TechStackIcons from "@/components/TechStackIcons";
-
+import FAQSection from "@/components/FAQSection";
 
 const Services = () => {
   const serviceDetails = [
@@ -181,6 +181,9 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
     </div>
   );
 };
